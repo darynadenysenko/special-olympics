@@ -1,23 +1,12 @@
-import pandas as pd
-from pathlib import Path
+from helpers.extractor import DataExtractor
 
-# Path to bronze folder
-bronze_path = Path("data/bronze")
+extractor = DataExtractor()
 
-# Load clubs
-clubs = pd.read_excel(bronze_path / "Thomas More Data Clubs.xlsx")
-print("CLUBS")
+clubs = extractor.load_excel("data/bronze/Thomas More Data Clubs.xlsx")
 print(clubs.shape)
-print(clubs.columns)
 
-# Load certifications
-certifications = pd.read_excel(bronze_path / "Thomas More Data Certifications.xlsx")
-print("\nCERTIFICATIONS")
+certifications = extractor.load_excel("data/bronze/Thomas More Data Certifications.xlsx")
 print(certifications.shape)
-print(certifications.columns)
 
-# Load results file
-results_2015 = pd.read_excel(bronze_path / "Thomas More Results 2015.xlsx")
-print("\nRESULTS 2015")
-print(results_2015.shape)
-print(results_2015.columns)
+results = extractor.load_all_results("data/bronze")
+print(len(results))
