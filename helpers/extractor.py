@@ -13,7 +13,14 @@ class DataExtractor:
         results = {}
 
         for file in bronze_path.glob("*.xlsx"):
-            if "results" in file.name.lower():
-                results[file.name] = pd.read_excel(file)
+            file_name = file.name.lower()
+
+            if "result" in file_name:
+                df = pd.read_excel(file)
+
+                year = "".join(char for char in file.name if char.isdigit())
+                df["Year"] = year
+
+                results[file.name] = df
 
         return results

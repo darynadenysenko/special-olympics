@@ -10,3 +10,6 @@ print(certifications.shape)
 
 results = extractor.load_all_results("data/bronze")
 print(len(results))
+
+for file_name, df in results.items():
+    print(file_name, df["Year"].iloc[0])
