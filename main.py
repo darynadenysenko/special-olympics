@@ -15,8 +15,13 @@ results = extractor.load_all_results("data/bronze")
 #combine all results into one dataframe
 all_results = pd.concat(results.values(), ignore_index=True)
 
-#clean clubs dataset
+#clean datasets
 clubs_clean = transformer.clean_clubs(clubs)
+certifications_clean = transformer.clean_certifications(certifications)
 
-#save cleaned clubs to silver layer
+print("Original certifications shape:", certifications.shape)
+print("Clean certifications shape:", certifications_clean.shape)
+
+#save cleaned datasets to silver layer
 loader.save_csv(clubs_clean, "data/silver/clubs_cleaned.csv")
+loader.save_csv(certifications_clean, "data/silver/certifications_cleaned.csv")
