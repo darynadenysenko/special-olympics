@@ -211,3 +211,26 @@ class DataTransformer:
         dim_sport = dim_sport[["sport_key", "sport_name"]]
 
         return dim_sport
+    
+
+    # build dim_role table
+    def build_dim_role(self, df):
+
+        df = df.copy()
+
+        dim_role = df[["Role"]]
+        dim_role = dim_role.drop_duplicates()
+        dim_role = dim_role[dim_role["Role"] != ""]
+        dim_role = dim_role.reset_index(drop=True)
+
+        dim_role["role_key"] = dim_role.index + 1 #surrogate key
+
+        # rename column
+        dim_role = dim_role.rename(columns={
+            "Role": "role_name"
+        })
+
+        # reorder 
+        dim_role = dim_role[["role_key", "role_name"]]
+
+        return dim_role

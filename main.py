@@ -48,9 +48,19 @@ loader.save_csv(dim_club, "data/gold/dim_club.csv")
 
 # build
 dim_sport = transformer.build_dim_sport(results_clean)
-
-print("DimSport shape:", dim_sport.shape)
-print(dim_sport.head())
-
 # save to gold layer
 loader.save_csv(dim_sport, "data/gold/dim_sport.csv")
+
+
+# ------dim_role------
+
+# build 
+dim_role = transformer.build_dim_role(results_clean)
+
+print("DimRole shape:", dim_role.shape)
+print(dim_role.head())
+
+# save to gold layer
+loader.save_csv(dim_role, "data/gold/dim_role.csv")
+
+print("dim_role.csv saved successfully")
