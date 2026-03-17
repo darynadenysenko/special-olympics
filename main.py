@@ -71,3 +71,9 @@ loader.save_csv(dim_year, "data/gold/dim_year.csv")
 dim_event = transformer.build_dim_event(results_clean, dim_sport)
 # save to gold layer
 loader.save_csv(dim_event, "data/gold/dim_event.csv")
+
+
+#------dim_person_type------
+dim_person_type = transformer.build_dim_person_type(certifications_clean)
+# save to gold layer
+loader.save_csv(dim_person_type, "data/gold/dim_person_type.csv")

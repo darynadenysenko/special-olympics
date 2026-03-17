@@ -295,3 +295,29 @@ class DataTransformer:
         dim_event = dim_event[["event_key", "event_name", "sport_key"]]
 
         return dim_event
+
+    
+
+    # build dim_person_type table
+    def build_dim_person_type(self, df):
+
+        df = df.copy()
+
+        dim_person_type = df[["Person type"]]
+        dim_person_type = dim_person_type[dim_person_type["Person type"] != ""]
+
+        dim_person_type = dim_person_type.drop_duplicates()
+
+        dim_person_type = dim_person_type.reset_index(drop=True)
+
+        dim_person_type["person_type_key"] = dim_person_type.index + 1 #surrogate key
+
+        dim_person_type = dim_person_type.rename(columns={
+            "Person type": "person_type_name"
+        })
+
+        dim_person_type = dim_person_type[
+            ["person_type_key", "person_type_name"]
+        ]
+
+        return dim_person_type
