@@ -234,3 +234,26 @@ class DataTransformer:
         dim_role = dim_role[["role_key", "role_name"]]
 
         return dim_role
+
+
+
+    # build dim_year table
+    def build_dim_year(self, df):
+
+        df = df.copy()
+
+        dim_year = df[["Year"]]
+        dim_year = dim_year.drop_duplicates()
+        dim_year = dim_year.reset_index(drop=True)
+
+        dim_year["year_key"] = dim_year.index + 1 #surrogate key
+
+        # rename column
+        dim_year = dim_year.rename(columns={
+            "Year": "year"
+        })
+
+        # reorder 
+        dim_year = dim_year[["year_key", "year"]]
+
+        return dim_year
