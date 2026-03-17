@@ -347,3 +347,110 @@ class DataTransformer:
         ]
 
         return dim_certification_type
+
+    
+
+    # build fact_person_certification table
+    def build_fact_person_certification(self,certifications_df,dim_person,dim_club,dim_person_type,dim_certification_type):
+
+        df = certifications_df.copy()
+
+        df = df[[
+            "Club",
+            "Code",
+            "Person type",
+            "Mental Handicap (SOB has this certificate)",
+            "Parents Consent (SOB has this certificate)",
+            "HAP (SOB has this certificate)",
+            "Unified Partner (SOB has this certificate)"
+        ]]
+
+        # rename certificate columns
+        df = df.rename(columns={
+            "Mental Handicap (SOB has this certificate)": "Mental Handicap",
+            "Parents Consent (SOB has this certificate)": "Parents Consent",
+            "HAP (SOB has this certificate)": "HAP",
+            "Unified Partner (SOB has this certificate)": "Unified Partner"
+        })
+
+        # turn certificate columns into rows
+        fact_person_certification = df.melt(
+            id_vars=["Club", "Code", "Person type"],
+            value_vars=["Mental Handicap", "Parents Consent", "HAP", "Unified Partner"],
+            var_name="certification_type_name",
+            value_name="has_certificate"
+        )
+
+        fact_person_certification["has_certificate"] = pd.to_numeric(
+        fact_person_certification["has_certificate"], errors="coerce")
+
+
+        fact_person_certification = fact_person_certification[fact_person_certification["has_certificate"] == 1.0]
+        
+        # join with dim_person
+        fact_person_certification = fact_person_certification.merge(
+            dim_person,
+            left_on="Code",
+            right_on="person_code",
+            how="left"
+        )
+
+        # join with dim_club
+        fact_person_certification = fact_person_certification.merge(
+            dim_club,
+            left_on="Club",
+            right_on="club_name",
+            how="left"
+        )
+
+        # join with dim_person_type
+        fact_person_certification = fact_person_certification.merge(
+            dim_person_type,
+            left_on="Person type",
+            right_on="person_type_name",
+            how="left"
+        )
+
+        # join with dim_certification_type
+        fact_person_certification = fact_person_certification.merge(
+            dim_certification_type,
+            on="certification_type_name",
+            how="left"
+        )
+
+        fact_person_certification["person_key"] = fact_person_certification["person_key"].astype("Int64")
+        fact_person_certification["club_key"] = fact_person_certification["club_key"].astype("Int64")
+        fact_person_certification["certification_type_key"] = fact_person_certification["certification_type_key"].astype("Int64")
+        fact_person_certification["person_type_key"] = fact_person_certification["person_type_key"].astype("Int64")
+        
+        # final columns
+        fact_person_certification = fact_person_certification[[
+            "person_key",
+            "club_key",
+            "certification_type_key",
+            "person_type_key"
+        ]]
+
+
+        fact_person_certification["has_certificate"] = 1
+
+        # remove duplicates
+        fact_person_certification = fact_person_certification.drop_duplicates()
+
+        # reset index
+        fact_person_certification = fact_person_certification.reset_index(drop=True)
+
+        # create surrogate key
+        fact_person_certification["athlete_certification_key"] = fact_person_certification.index + 1
+
+        # reorder columns
+        fact_person_certification = fact_person_certification[[
+            "athlete_certification_key",
+            "person_key",
+            "club_key",
+            "certification_type_key",
+            "person_type_key",
+            "has_certificate"
+        ]]
+
+        return fact_person_certification

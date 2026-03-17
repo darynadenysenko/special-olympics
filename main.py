@@ -89,3 +89,17 @@ dim_certification_type = transformer.build_dim_certification_type()
 # save to gold layer
 loader.save_csv(dim_certification_type, "data/gold/dim_certification_type.csv")
 
+
+
+#------fact_person_certification------
+
+# build 
+fact_person_certification = transformer.build_fact_person_certification(
+    certifications_clean,
+    dim_person,
+    dim_club,
+    dim_person_type,
+    dim_certification_type
+)
+# save to gold layer
+loader.save_csv(fact_person_certification, "data/gold/fact_person_certification.csv")
