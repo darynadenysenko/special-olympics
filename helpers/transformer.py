@@ -187,3 +187,27 @@ class DataTransformer:
         ]
 
         return dim_club
+
+    
+
+    #build dim_sport table
+    def build_dim_sport(self, df):
+
+        df = df.copy()
+
+        dim_sport = df[["Sport"]]
+        dim_sport = dim_sport.drop_duplicates()
+
+        dim_sport = dim_sport.reset_index(drop=True)
+
+        dim_sport["sport_key"] = dim_sport.index + 1 #surrogate key
+
+        #rename column
+        dim_sport = dim_sport.rename(columns={
+            "Sport": "sport_name"
+        })
+
+        #reorder
+        dim_sport = dim_sport[["sport_key", "sport_name"]]
+
+        return dim_sport
