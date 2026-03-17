@@ -62,18 +62,30 @@ loader.save_csv(dim_role, "data/gold/dim_role.csv")
 
 # ------dim_year------
 
+# build
 dim_year = transformer.build_dim_year(results_clean)
 # save to gold layer
 loader.save_csv(dim_year, "data/gold/dim_year.csv")
 
 
 #------dim_event------
+# build
 dim_event = transformer.build_dim_event(results_clean, dim_sport)
 # save to gold layer
 loader.save_csv(dim_event, "data/gold/dim_event.csv")
 
 
 #------dim_person_type------
+# build
 dim_person_type = transformer.build_dim_person_type(certifications_clean)
 # save to gold layer
 loader.save_csv(dim_person_type, "data/gold/dim_person_type.csv")
+
+
+#------dim_certification_type------
+
+# build 
+dim_certification_type = transformer.build_dim_certification_type()
+# save to gold layer
+loader.save_csv(dim_certification_type, "data/gold/dim_certification_type.csv")
+

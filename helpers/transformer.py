@@ -321,3 +321,29 @@ class DataTransformer:
         ]
 
         return dim_person_type
+
+    
+
+    # build dim_certification_type table
+    def build_dim_certification_type(self):
+
+        certification_types = [
+            "Mental Handicap",
+            "Parents Consent",
+            "HAP",
+            "Unified Partner"
+        ]
+
+        dim_certification_type = pd.DataFrame({
+            "certification_type_name": certification_types
+        })
+
+        #surrogate key
+        dim_certification_type["certification_type_key"] = dim_certification_type.index + 1
+
+        # reorder columns
+        dim_certification_type = dim_certification_type[
+            ["certification_type_key", "certification_type_name"]
+        ]
+
+        return dim_certification_type
