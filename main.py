@@ -25,3 +25,14 @@ results_clean = transformer.clean_results(all_results)
 loader.save_csv(clubs_clean, "data/silver/clubs_cleaned.csv")
 loader.save_csv(certifications_clean, "data/silver/certifications_cleaned.csv")
 loader.save_csv(results_clean, "data/silver/results_cleaned.csv")
+
+
+
+# build DimPerson
+dim_person = transformer.build_dim_person(certifications_clean)
+
+print("DimPerson shape:", dim_person.shape)
+print(dim_person.head())
+
+# save to gold layer
+loader.save_csv(dim_person, "data/gold/dim_person.csv")

@@ -109,3 +109,28 @@ class DataTransformer:
         df = df.reset_index(drop=True)  # reset index after cleaning
 
         return df
+
+
+    # build dim_person table
+
+    def build_dim_person(self, df):
+
+        df = df.copy()
+        dim_person = df[["Code", "Gender", "DOB"]]
+
+        dim_person = dim_person.drop_duplicates()
+
+        dim_person = dim_person.reset_index(drop=True) #reset index after dropping duplicates
+
+        dim_person["person_key"] = dim_person.index + 1 #surrogate key 
+
+        dim_person = dim_person.rename(columns={
+            "Code": "person_code"
+        })
+
+        # reorder columns
+        dim_person = dim_person[
+            ["person_key", "person_code", "DOB", "Gender"]
+        ]
+
+        return dim_person
