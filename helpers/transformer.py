@@ -134,3 +134,56 @@ class DataTransformer:
         ]
 
         return dim_person
+    
+
+
+    #build dim_club table
+    def build_dim_club(self, df):
+
+        df = df.copy()
+
+        dim_club = df[[
+            "Group number",
+            "Name",
+            "Primary language",
+            "Address (Street and Number)",
+            "Zipcode",
+            "City",
+            "Province",
+            "Country"
+        ]]
+
+        dim_club = dim_club.drop_duplicates()
+
+        dim_club = dim_club.reset_index(drop=True)
+
+        dim_club["club_key"] = dim_club.index + 1 #surrogate key
+
+        #rename columns
+        dim_club = dim_club.rename(columns={
+            "Group number": "group_number",
+            "Name": "club_name",
+            "Primary language": "primary_language",
+            "Address (Street and Number)": "address",
+            "Zipcode": "zipcode",
+            "City": "city",
+            "Province": "province",
+            "Country": "country"
+        })
+
+        #reorder 
+        dim_club = dim_club[
+            [
+                "club_key",
+                "group_number",
+                "club_name",
+                "primary_language",
+                "address",
+                "zipcode",
+                "city",
+                "province",
+                "country"
+            ]
+        ]
+
+        return dim_club

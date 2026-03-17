@@ -28,11 +28,18 @@ loader.save_csv(results_clean, "data/silver/results_cleaned.csv")
 
 
 
-# build DimPerson
+# build dim_person
 dim_person = transformer.build_dim_person(certifications_clean)
-
-print("DimPerson shape:", dim_person.shape)
-print(dim_person.head())
 
 # save to gold layer
 loader.save_csv(dim_person, "data/gold/dim_person.csv")
+
+
+# build dim_club
+dim_club = transformer.build_dim_club(clubs_clean)
+
+print("DimClub shape:", dim_club.shape)
+print(dim_club.head())
+
+# save to gold layer
+loader.save_csv(dim_club, "data/gold/dim_club.csv")
