@@ -257,3 +257,41 @@ class DataTransformer:
         dim_year = dim_year[["year_key", "year"]]
 
         return dim_year
+
+    
+    # build dim_event table
+
+    def build_dim_event(self, df, dim_sport):
+
+        df = df.copy()
+        dim_sport = dim_sport.copy()
+
+        dim_event = df[["Event", "Sport"]]
+
+        dim_event = dim_event[dim_event["Event"] != ""]
+        dim_event = dim_event.drop_duplicates()
+
+        # join with dim_sport to get sport_key
+        dim_event = dim_event.merge(
+            dim_sport,
+            left_on="Sport",
+            right_on="sport_name",
+            how="left"
+        )
+
+        dim_event = dim_event[["Event", "sport_key"]]
+
+
+        dim_event = dim_event.reset_index(drop=True)
+
+        dim_event["event_key"] = dim_event.index + 1 #surrogate key
+
+        # rename 
+        dim_event = dim_event.rename(columns={
+            "Event": "event_name"
+        })
+
+        # reorder 
+        dim_event = dim_event[["event_key", "event_name", "sport_key"]]
+
+        return dim_event

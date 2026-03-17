@@ -61,8 +61,13 @@ loader.save_csv(dim_role, "data/gold/dim_role.csv")
 
 
 # ------dim_year------
+
 dim_year = transformer.build_dim_year(results_clean)
-print("DimYear shape:", dim_year.shape)
-print(dim_year.head())
 # save to gold layer
 loader.save_csv(dim_year, "data/gold/dim_year.csv")
+
+
+#------dim_event------
+dim_event = transformer.build_dim_event(results_clean, dim_sport)
+# save to gold layer
+loader.save_csv(dim_event, "data/gold/dim_event.csv")
