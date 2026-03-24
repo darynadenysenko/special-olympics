@@ -583,3 +583,99 @@ class DataTransformer:
         ]]
 
         return fact_results
+
+
+    #build fact_club_participation table
+    def build_fact_club_participation(self, clubs_df, dim_club, dim_year):
+
+        df = clubs_df.copy()
+        dim_club = dim_club.copy()
+        dim_year = dim_year.copy()
+
+        df = df[[
+            "Name",
+            "Participation Games 2015",
+            "Participation Games 2016",
+            "Participation Games 2017",
+            "Participation Games 2018",
+            "Participation Games 2019",
+            "Participation Games 2022",
+            "Participation Games 2023",
+            "Participation Games 2024",
+            "Participation Games 2025"
+        ]]
+
+        # rename
+        df = df.rename(columns={
+            "Name": "club_name",
+            "Participation Games 2015": "2015",
+            "Participation Games 2016": "2016",
+            "Participation Games 2017": "2017",
+            "Participation Games 2018": "2018",
+            "Participation Games 2019": "2019",
+            "Participation Games 2022": "2022",
+            "Participation Games 2023": "2023",
+            "Participation Games 2024": "2024",
+            "Participation Games 2025": "2025"
+        })
+
+
+        fact_club_participation = df.melt(
+            id_vars=["club_name"],
+            var_name="year",
+            value_name="participated"
+        )
+
+        fact_club_participation["participated"] = pd.to_numeric(
+            fact_club_participation["participated"],
+            errors="coerce"
+        )
+
+        fact_club_participation = fact_club_participation[
+            fact_club_participation["participated"] == 1
+        ]
+
+        fact_club_participation["year"] = fact_club_participation["year"].astype(int)
+        dim_year["year"] = dim_year["year"].astype(int)
+
+        # join with dim_club
+        fact_club_participation = fact_club_participation.merge(
+            dim_club[["club_key", "club_name"]],
+            on="club_name",
+            how="left"
+        )
+
+        # join with dim_year
+        fact_club_participation = fact_club_participation.merge(
+            dim_year[["year_key", "year"]],
+            on="year",
+            how="left"
+        )
+
+        # convert keys to integer type
+        fact_club_participation["club_key"] = fact_club_participation["club_key"].astype("Int64")
+        fact_club_participation["year_key"] = fact_club_participation["year_key"].astype("Int64")
+
+        #final columns
+        fact_club_participation = fact_club_participation[[
+            "club_key",
+            "year_key"
+        ]]
+
+        fact_club_participation["participated"] = 1
+        fact_club_participation = fact_club_participation.drop_duplicates()
+        fact_club_participation = fact_club_participation.reset_index(drop=True)
+
+        # surrogate key
+        fact_club_participation["club_participation_key"] = fact_club_participation.index + 1
+
+        # reorder
+        fact_club_participation = fact_club_participation[[
+            "club_participation_key",
+            "club_key",
+            "year_key",
+            "participated"
+        ]]
+
+
+        return fact_club_participation

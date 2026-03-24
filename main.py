@@ -120,3 +120,16 @@ fact_results = transformer.build_fact_results(
 # save to gold layer
 loader.save_csv(fact_results, "data/gold/fact_results.csv")
 
+
+#------fact_club_participation------
+# build 
+fact_club_participation = transformer.build_fact_club_participation(
+    clubs_clean,
+    dim_club,
+    dim_year
+)
+
+# save to gold
+loader.save_csv(fact_club_participation, "data/gold/fact_club_participation.csv")
+
+
