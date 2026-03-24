@@ -103,3 +103,20 @@ fact_person_certification = transformer.build_fact_person_certification(
 )
 # save to gold layer
 loader.save_csv(fact_person_certification, "data/gold/fact_person_certification.csv")
+
+
+#------fact_results------
+# build
+fact_results = transformer.build_fact_results(
+    results_clean,
+    dim_person,
+    dim_club,
+    dim_sport,
+    dim_event,
+    dim_role,
+    dim_year
+)
+
+# save to gold layer
+loader.save_csv(fact_results, "data/gold/fact_results.csv")
+

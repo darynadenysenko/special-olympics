@@ -454,3 +454,132 @@ class DataTransformer:
         ]]
 
         return fact_person_certification
+
+
+    # build fact_results table
+    def build_fact_results(
+        self,
+        results_df,
+        dim_person,
+        dim_club,
+        dim_sport,
+        dim_event,
+        dim_role,
+        dim_year
+    ):
+
+        df = results_df.copy()
+
+        # keep needed columns
+        df = df[[
+            "Code",
+            "Club",
+            "Sport",
+            "Event",
+            "Role",
+            "Year",
+            "Place",
+            "Score",
+            "Age"
+        ]]
+
+        # join with dim_person
+        df = df.merge(
+            dim_person[["person_key", "person_code"]],
+            left_on="Code",
+            right_on="person_code",
+            how="left"
+        )
+
+        # join with dim_club
+        df = df.merge(
+            dim_club[["club_key", "club_name"]],
+            left_on="Club",
+            right_on="club_name",
+            how="left"
+        )
+
+        # join with dim_sport
+        df = df.merge(
+            dim_sport[["sport_key", "sport_name"]],
+            left_on="Sport",
+            right_on="sport_name",
+            how="left"
+        )
+
+        # join with dim_event
+        df = df.merge(
+            dim_event[["event_key", "event_name"]],
+            left_on="Event",
+            right_on="event_name",
+            how="left"
+        )
+
+        # join with dim_role
+        df = df.merge(
+            dim_role[["role_key", "role_name"]],
+            left_on="Role",
+            right_on="role_name",
+            how="left"
+        )
+
+        # join with dim_year
+        df = df.merge(
+            dim_year[["year_key", "year"]],
+            left_on="Year",
+            right_on="year",
+            how="left"
+        )
+
+        # convert keys to integers
+        df["person_key"] = df["person_key"].astype("Int64")
+        df["club_key"] = df["club_key"].astype("Int64")
+        df["sport_key"] = df["sport_key"].astype("Int64")
+        df["event_key"] = df["event_key"].astype("Int64")
+        df["role_key"] = df["role_key"].astype("Int64")
+        df["year_key"] = df["year_key"].astype("Int64")
+
+        # keep final columns
+        fact_results = df[[
+            "person_key",
+            "club_key",
+            "sport_key",
+            "event_key",
+            "role_key",
+            "year_key",
+            "Place",
+            "Score",
+            "Age"
+        ]]
+
+        # rename measures
+        fact_results = fact_results.rename(columns={
+            "Place": "place",
+            "Score": "score",
+            "Age": "age"
+        })
+
+        # remove duplicates
+        fact_results = fact_results.drop_duplicates()
+
+        # reset index
+        fact_results = fact_results.reset_index(drop=True)
+
+        # create surrogate key
+        fact_results["result_key"] = fact_results.index + 1
+
+        # reorder columns
+        fact_results = fact_results[[
+            "result_key",
+            "person_key",
+            "club_key",
+            "sport_key",
+            "event_key",
+            "role_key",
+            "year_key",
+            "place",
+            "score",
+            "age"
+        ]]
+
+        return fact_results
