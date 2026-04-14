@@ -71,12 +71,11 @@ class DataTransformer:
         return df
 
 
-
     #clean the results dataframe
     def clean_results(self, df):
 
         df = df.copy()
-        df.columns = df.columns.str.strip() #remove spaces in column names
+        df.columns = df.columns.str.strip()
 
         text_columns = [
             "Code",
@@ -90,23 +89,14 @@ class DataTransformer:
         for col in text_columns:
             df[col] = df[col].fillna("").astype(str).str.strip()
 
-        
-        df["DOB"] = pd.to_datetime(df["DOB"], dayfirst=True) #convert DOB to datetime
+        df["DOB"] = pd.to_datetime(df["DOB"], dayfirst=True)
 
-        df["Score"] = df["Score"].astype(str).str.replace("points", "").str.strip() #clean score column
+        df["Score"] = df["Score"].astype(str).str.strip()
+        df["Score_Numeric"] = pd.to_numeric(df["Score"].str.replace("points", ""), errors="coerce")
 
-        df["Score"] = pd.to_numeric(df["Score"], errors="coerce") # convert score to numeric
+        df["Place"] = df["Place"].astype(str).str.strip()
 
-        # clean place column 
-        df["Place"] = df["Place"].astype(str).str.extract(r"(\d+)")
-
-        # convert place to numeric
-        df["Place"] = pd.to_numeric(df["Place"], errors="coerce")
-
-        # remove duplicate rows
-        #df = df.drop_duplicates()
-       
-        df = df.reset_index(drop=True)  # reset index after cleaning
+        df = df.reset_index(drop=True)
 
         return df
 
@@ -480,6 +470,7 @@ class DataTransformer:
             "Year",
             "Place",
             "Score",
+            "Score_Numeric",
             "Age"
         ]]
 
@@ -549,6 +540,7 @@ class DataTransformer:
             "year_key",
             "Place",
             "Score",
+            "Score_Numeric",
             "Age"
         ]]
 
@@ -556,6 +548,7 @@ class DataTransformer:
         fact_results = fact_results.rename(columns={
             "Place": "place",
             "Score": "score",
+            "Score_Numeric": "score_numeric",
             "Age": "age"
         })
 
@@ -579,6 +572,7 @@ class DataTransformer:
             "year_key",
             "place",
             "score",
+            "score_numeric",
             "age"
         ]]
 
