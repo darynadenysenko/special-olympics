@@ -95,6 +95,7 @@ class DataTransformer:
         df["Score_Numeric"] = pd.to_numeric(df["Score"].str.replace("points", ""), errors="coerce")
 
         df["Place"] = df["Place"].astype(str).str.strip()
+        df["Place_Numeric"] = pd.to_numeric(df["Place"].str.extract(r"(\d+)")[0], errors="coerce")
 
         df = df.reset_index(drop=True)
 
@@ -469,6 +470,7 @@ class DataTransformer:
             "Role",
             "Year",
             "Place",
+            "Place_Numeric",
             "Score",
             "Score_Numeric",
             "Age"
@@ -539,6 +541,7 @@ class DataTransformer:
             "role_key",
             "year_key",
             "Place",
+            "Place_Numeric",
             "Score",
             "Score_Numeric",
             "Age"
@@ -547,6 +550,7 @@ class DataTransformer:
         # rename measures
         fact_results = fact_results.rename(columns={
             "Place": "place",
+            "Place_Numeric": "place_numeric",
             "Score": "score",
             "Score_Numeric": "score_numeric",
             "Age": "age"
@@ -571,6 +575,7 @@ class DataTransformer:
             "role_key",
             "year_key",
             "place",
+            "place_numeric",
             "score",
             "score_numeric",
             "age"
