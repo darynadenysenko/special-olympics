@@ -5,19 +5,19 @@ club_key,group_number,club_name,primary_language,address,zipcode,city,province,c
 4,103,LES TUNIQUES BLEUES,French,Rue Buisson aux Loups 12,1400.0,NIVELLES,Brabant Wallon,BELGIQUE
 5,104,EVASION,French,Rue Léon Houtard 18,7110.0,HOUDENG GOEGNIES,Hainaut,BELGIQUE
 6,105,LES AUBEPINES,French,Rue de l'Institut 40,4632.0,CEREXHE-HEUSEUX,Liège,BELGIQUE
-7,107,S.J.N. CLUB,French,Rue d'Anethan 33,1030.0,BRUXELLES,Brussel/Bruxelles,BELGIQUE
+7,107,S.J.N. CLUB,French,Rue d'Anethan 33,1030.0,BRUXELLES,Bruxelles,BELGIQUE
 8,109,LES CARACOLES,French,Rue D'Arquet 99,5000.0,NAMUR,Namur,BELGIQUE
 9,110,LES QUILLES LIBRES,French,Rue de Sesselich 236,6700.0,ARLON,Luxembourg,BELGIQUE
-10,111,LA CLAIRIÈRE,French,Av. des Hannetons 58,1170.0,BRUXELLES,Brussel/Bruxelles,BELGIQUE
+10,111,LA CLAIRIÈRE,French,Av. des Hannetons 58,1170.0,BRUXELLES,Bruxelles,BELGIQUE
 11,112,RJCV SPORT,French,"Rue de Reumont, 143",5020.0,Malonne,Namur,BELGIQUE
 12,113,CLERLANDE SPORT,French,Allée de Clerlande 7,1340.0,Ottignies,Brabant Wallon,Belgique
 13,115,LES OURSONS,French,Rue d'Anton 302,5300.0,BONNEVILLE,Namur,BELGIQUE
-14,116,LES COPAINS,French,Rue Heideken 58,1083.0,BRUXELLES,Brussel/Bruxelles,BELGIQUE
+14,116,LES COPAINS,French,Rue Heideken 58,1083.0,BRUXELLES,Bruxelles,BELGIQUE
 15,118,LES GRINGOS,French,Boulevard dessus de laVille 193,5550.0,SUGNY,Namur,BELGIQUE
 16,119,METHYS,French,Quai de Rome 21,4000.0,LIEGE,Liège,BELGIQUE
 17,120,L'EFFORT,French,Rue St. Nicolas 554,4000.0,LIEGE,Liège,BELGIQUE
 18,121,L'ENVOL,French,Rue de La Vellerie 131,7700.0,MOUSCRON,Hainaut,BELGIQUE
-19,122,LA FORESTIERE,French,Rue de l'Ete 100,1050.0,BRUXELLES,Brussel/Bruxelles,BELGIQUE
+19,122,LA FORESTIERE,French,Rue de l'Ete 100,1050.0,BRUXELLES,Bruxelles,BELGIQUE
 20,123,LA CLARINE,French,rue Dieu d'en bas 44,7170.0,FAYT-LEZ-MANAGE,Hainaut,BELGIQUE
 21,124,JENNEVAUX RENCONTRE,French,rue du Centre 53,5170.0,LESVE,Namur,BELGIQUE
 22,125,LES KOLOUTES,French,Avenue Félix Lacourt 70,1390.0,GREZ-DOICEAU,Brabant Wallon,BELGIQUE
@@ -33,21 +33,21 @@ club_key,group_number,club_name,primary_language,address,zipcode,city,province,c
 32,137,MOSPO,French,Rue du Crétinier 184,7712.0,HERSEAUX,Hainaut,BELGIQUE
 33,138,OKAPI SPORT,French,Chaussée de Bruxelles 184,7061.0,CASTEAU,Hainaut,BELGIQUE
 34,139,CLAIRVAL SPORT ACIS,French,Place J. Maréchal 5,6940.0,BARVAUX,Luxembourg,BELGIQUE
-35,140,LE SESAME,French,Avenue De Messidor 16,1180.0,BRUXELLES,Brussel/Bruxelles,BELGIQUE
-36,142,FARRA STRATEGIE,French,Rue de La Stratégie 30,1160.0,Auderghem,Brussel/Bruxelles,BELGIQUE
+35,140,LE SESAME,French,Avenue De Messidor 16,1180.0,BRUXELLES,Bruxelles,BELGIQUE
+36,142,FARRA STRATEGIE,French,Rue de La Stratégie 30,1160.0,Auderghem,Bruxelles,BELGIQUE
 37,143,LE CHAT BOTTÉ,French,Rue Anatole France 1,7100.0,LA LOUVIÈRE,Hainaut,BELGIQUE
-38,144,LES PLATANES,French,Rue du Loutrier 75,1170.0,BRUXELLES,Brussel/Bruxelles,BELGIQUE
-39,145,LE PRETEXTE,French,Av. Kersbeek 340,1180.0,BRUXELLES,Brussel/Bruxelles,BELGIQUE
+38,144,LES PLATANES,French,Rue du Loutrier 75,1170.0,BRUXELLES,Bruxelles,BELGIQUE
+39,145,LE PRETEXTE,French,Av. Kersbeek 340,1180.0,BRUXELLES,Bruxelles,BELGIQUE
 40,146,LE PETIT POUCET,French,Rue du Fief 4,6470.0,SIVRY,Hainaut,BELGIQUE
 41,147,CENTRE REINE FABIOLA,French,Rue de Neufvilles 455,7063.0,NEUFVILLES,Hainaut,BELGIQUE
 42,148,LES RENARDS DE VOLAIVILLE,French,Rue de la Misbour 370,6637.0,FAUVILLERS,Luxembourg,BELGIQUE
 43,152,S.R.A. L'ODYSSEE,French,"Rue de la Paix, 102",6061.0,MONTIGNIES / S / SAMBRE,Hainaut,BELGIQUE
 44,153,L'ESPACE LIOBA,French,"Avenue Vauban, 8",5000.0,NAMUR,Namur,BELGIQUE
 45,154,LES BLÉS D’OR,French,Route de Velaines 23,7543.0,MOURCOURT,Hainaut,BELGIQUE
-46,155,DELTA,French,Boulevard de Waterloo 1O5,1000.0,BRUXELLES,Brussel/Bruxelles,BELGIQUE
+46,155,DELTA,French,Boulevard de Waterloo 1O5,1000.0,BRUXELLES,Bruxelles,BELGIQUE
 47,157,DOMITILLE,French,Rue de Bosfagne 51 A,4950.0,WAIMES,Liège,BELGIQUE
 48,158,SPORT ESPOIR,French,Domaine des Croisiers 2,4821.0,DISON  ANDRIMONT,Liège,BELGIQUE
-49,159,LES BOLETS,French,Chaussée de La Hulpe 331,1170.0,BRUXELLES,Brussel/Bruxelles,BELGIQUE
+49,159,LES BOLETS,French,Chaussée de La Hulpe 331,1170.0,BRUXELLES,Bruxelles,BELGIQUE
 50,160,B.S.C. OSTBELGIEN,French,Dorfstraße 37,4780.0,RECHT,Liège,BELGIQUE
 51,161,HOME VALERE DELCROIX,French,"46, rue du Pont Rieu",7500.0,Tournai,Hainaut,Belgique
 52,162,A.T.L.A.S.H.,French,Grand Route 47,4500.0,TIHANGE,Liège,BELGIQUE
@@ -55,7 +55,7 @@ club_key,group_number,club_name,primary_language,address,zipcode,city,province,c
 54,164,ARBOTEAM,French,Rue de Briffoeil 31,7604.0,WASMES A-B,Hainaut,BELGIQUE
 55,165,LE COLOMBIER,French,"Allée de la Cense du Colombier,2",1400.0,NIVELLES,Brabant Wallon,BELGIQUE
 56,166,LES GOELANDS,French,Chemin du Home André Livémont 1,7972.0,AUBECHIES,Hainaut,BELGIQUE
-57,168,VRAIES RICHESSES,French,Rue de la Procession 24,1070.0,BRUXELLES,Brussel/Bruxelles,BELGIQUE
+57,168,VRAIES RICHESSES,French,Rue de la Procession 24,1070.0,BRUXELLES,Bruxelles,BELGIQUE
 58,169,CERISAIE SPORT,French,Rue de la Cerisaie 8,4690.0,BASSENGE,Liège,BELGIQUE
 59,173,ALBATROS,French,Chemin du Bois 5,5660.0,PETITE-CHAPELLE,Namur,BELGIQUE
 60,174,ALTEO MOUSCRON,French,Rue Saint Joseph 2,7700.0,MOUSCRON,Hainaut,BELGIQUE
@@ -82,25 +82,25 @@ club_key,group_number,club_name,primary_language,address,zipcode,city,province,c
 81,205,ASCENSION 2,French,chemin de la Motelette 12,7322.0,POMMEROEUL,Hainaut,
 82,206,LA SOURIS VERTE,French,Chaussée de Roeulx 63,7000.0,MONS,Hainaut,
 83,207,LES GRILLONS,French,Rue de Chèvremont 35,4051.0,VAUX-SOUS-CHEVREMONT,Liège,BELGIQUE
-84,209,HAMA II,French,Rue Jules Lejeune 46,1050.0,BRUXELLES,Brussel/Bruxelles,BELGIQUE
+84,209,HAMA II,French,Rue Jules Lejeune 46,1050.0,BRUXELLES,Bruxelles,BELGIQUE
 85,210,A.S. AURORE,French,Rue du Château 82,6150.0,ANDERLUES,Hainaut,BELGIQUE
 86,211,LES BARRACUDAS,French,Rue de la Résistance 5,7610.0,RUMES,Hainaut,BELGIQUE
-87,213,LA PASSERELLE,French,Rue Middelbourg 68,1170.0,BRUXELLES,Brussel/Bruxelles,BELGIQUE
+87,213,LA PASSERELLE,French,Rue Middelbourg 68,1170.0,BRUXELLES,Bruxelles,BELGIQUE
 88,214,L'ENVOLÉE,French,Rue Maison Communale 4,4802.0,HEUSY-VERVIERS,Liège,BELGIQUE
 89,215,KEGELJAN,French,Rue Vandervelde 32,5190.0,HAM-SUR-SAMBRE,Namur,
 90,217,GRAND AXHE,French,Rue Georges César 50,4300.0,WAREMME,Liège,
 91,219,BOTHEY CLUB,French,Rue Louis Burteau 48,5032.0,GEMBLOUX,Namur,
 92,221,INSTITUT DU BON PASTEUR,French,Rue d'Hoyaux 6,7602.0,BURY,Hainaut,BELGIQUE
-93,222,CENTRE DE VIE,French,Avenue J.J. Crocq 8,1090.0,BRUXELLES,Brussel/Bruxelles,BELGIQUE
-94,223,STARTEMIA,French,"Avenue des Champs, 129 b",1040.0,ETTERBEEK,Brussel/Bruxelles,
+93,222,CENTRE DE VIE,French,Avenue J.J. Crocq 8,1090.0,BRUXELLES,Bruxelles,BELGIQUE
+94,223,STARTEMIA,French,"Avenue des Champs, 129 b",1040.0,ETTERBEEK,Bruxelles,
 95,224,LE GARDIAN V3,French,Rue de Bidet 8,5590.0,CHAPOIS -LEIGNON,Namur,BELGIQUE
 96,227,TOMA STENA,French,"Rue Entre-Deux-Bois, 55",4670.0,BLEGNY,Liège,
-97,229,DREAM TEAM,French,Rue du Melkriek 100,1180.0,BRUXELLES,Brussel/Bruxelles,BELGIQUE
+97,229,DREAM TEAM,French,Rue du Melkriek 100,1180.0,BRUXELLES,Bruxelles,BELGIQUE
 98,231,LE MAGNOLIA,French,"Omer Lescot, 12",7334.0,HAUTRAGE,Hainaut,
-99,232,ORFEA,French,"Avenue des Champs, 129",1040.0,ETTERBEEK,Brussel/Bruxelles,
-100,233,LES PETUNIAS,French,Avenue de la Couronne 554,1050.0,BRUXELLES,Brussel/Bruxelles,BELGIQUE
+99,232,ORFEA,French,"Avenue des Champs, 129",1040.0,ETTERBEEK,Bruxelles,
+100,233,LES PETUNIAS,French,Avenue de la Couronne 554,1050.0,BRUXELLES,Bruxelles,BELGIQUE
 101,234,CONFORT SOCIAL,French,"Rue de la Chassaudrie, 23-25",7600.0,PERUWELZ,Hainaut,
-102,235,LES FOUGERES,French,Rue du Loutrier 63,1170.0,BRUXELLES,Brussel/Bruxelles,BELGIQUE
+102,235,LES FOUGERES,French,Rue du Loutrier 63,1170.0,BRUXELLES,Bruxelles,BELGIQUE
 103,236,LA MAISON D'EMERAUDE,French,"Rue Aze Fosse, 31",6870.0,ARVILLE,Luxembourg,
 104,237,EMBARQUEMENT IMMEDIAT,French,avenue Macar 5,4100.0,SERAING,Liège,BELGIQUE
 105,238,LE VILLAGE,French,Avenue François Geuten 88,7780.0,COMINES,Hainaut,BELGIQUE
@@ -109,12 +109,12 @@ club_key,group_number,club_name,primary_language,address,zipcode,city,province,c
 108,243,LES RENES DE LA VIE,French,Chaussée de Bruxelles 111 bte 4,1310.0,LA HULPE,Brabant Wallon,Belgium
 109,245,EQUISTAL,French,"Rue du Centre, 59",1404.0,BORNIVAL,Brabant Wallon,
 110,246,LE COUP FRANC,French,Rue St. Wivine 15,1315.0,SART-RISBART,Brabant Wallon,BELGIQUE
-111,248,I.S.B.,French,Kattenberg 19,1170.0,BOITSFORT,Brussel/Bruxelles,BELGIQUE
+111,248,I.S.B.,French,Kattenberg 19,1170.0,BOITSFORT,Bruxelles,BELGIQUE
 112,249,ROQUEBRUNE,French,Avenue Vauban 8,5000.0,NAMUR,Namur,BELGIQUE
 113,251,LES PETITS GODETS,French,Rue de Cronfestu 28,7141.0,CARNIERES,Hainaut,BELGIQUE
-114,252,LA FORET,French,Val des Epinettes 17,1150.0,BRUXELLES,Brussel/Bruxelles,BELGIQUE
-115,253,LES WEIGELIAS,French,Avenue de l'Arbalète 58,1170.0,BRUXELLES,Brussel/Bruxelles,BELGIQUE
-116,254,HADEP,French,Chée de Neerstalle 265,1190.0,BRUXELLES,Brussel/Bruxelles,BELGIQUE
+114,252,LA FORET,French,Val des Epinettes 17,1150.0,BRUXELLES,Bruxelles,BELGIQUE
+115,253,LES WEIGELIAS,French,Avenue de l'Arbalète 58,1170.0,BRUXELLES,Bruxelles,BELGIQUE
+116,254,HADEP,French,Chée de Neerstalle 265,1190.0,BRUXELLES,Bruxelles,BELGIQUE
 117,255,SAPI-CHAPELLE,French,"Rue des Bureaux, 6-8",7160.0,CHAPELLE-LEZ-HERLAIMONT,Hainaut,
 118,256,LES QUATRE SAISONS,French,Rue Principale 36,6953.0,AMBLY,Luxembourg,BELGIQUE
 119,258,LES ALIZES,French,Rue des Fusillés 1,4837.0,MEMBACH (BAELEN),Liège,BELGIQUE
@@ -128,39 +128,39 @@ club_key,group_number,club_name,primary_language,address,zipcode,city,province,c
 127,271,LE TOURNESOL SPORTIF,French,Chaussée de Dottignies 124,7730.0,ESTAIMPUIS,Hainaut,BELGIQUE
 128,272,LE PETIT PRINCE DE COURCELLES,French,Rue des Claires fontaines 114,6180.0,COURCELLES,Hainaut,BELGIQUE
 129,273,SAJA SOLIGNAC,French,Rue des  Lilas 7,5364.0,HAMOIS (SCHALTIN),Namur,BELGIQUE
-130,274,TABUCHET SPORT,French,Boulevard Ernest Solvay 475,4000.0,Liège,Liège,Belgique
+130,274,TABUCHET SPORT,French,Boulevard Ernest Solvay 475,4000.0,,Liège,Belgique
 131,275,LA SYMPHONIE,French,Avenue Gustave Maigret 39,7030.0,SAINT-SYMPHORIEN,Hainaut,BELGIQUE
-132,279,HAMA 1,French,Avenue  Ernest Cambier 10,1030.0,BRUXELLES,Brussel/Bruxelles,BELGIQUE
+132,279,HAMA 1,French,Avenue  Ernest Cambier 10,1030.0,BRUXELLES,Bruxelles,BELGIQUE
 133,281,RESIDENCE ÉLYSÉE,French,Trieu Moriau 3,7542.0,MONT-SAINT-AUBERT,Hainaut,BELGIQUE
 134,282,LA CASSINE,French,Place P- H Jouret 14-17,7880.0,Flobecq,Hainaut,BELGIQUE
 135,284,L'AIR DE PAIX,French,Route de Bavay 56,7080.0,FRAMERIES,Hainaut,BELGIQUE
 136,285,LA BASTIDE,French,Avenue Vauban 8,5000.0,NAMUR,Namur,BELGIQUE
 137,286,JUDO CLUB WELLIN ASBL,French,"Rue Paul Dubois, 45",6920.0,WELLIN,Luxembourg,BELGIQUE
 138,287,HOCKEY TOGETHER PINGOUIN NIVELLES,French,"67, rue du Monde",1400.0,Nivelles,Brabant Wallon,
-139,288,LE JARDIN DES ANGES,French,Rue de Ropaix n°16,7370.0,DOUR,HAINAUT,
+139,288,LE JARDIN DES ANGES,French,Rue de Ropaix n°16,7370.0,DOUR,Hainaut,
 140,289,NEW MOBILITY CLUB SPORTIF DE MOUSCRON,French,"Rue du Bois, 103",7700.0,MOUSCRON,Hainaut,
 141,290,LOTUS D'OCQUIER,French,"Grand Rue, 62",4560.0,OCQUIER,Liège,
-142,291,LES DALTONS,French,"Rue Georges Tondeur, 60",7040.0,Quevy-Le-Grand (Mons),HAINAUT,
+142,291,LES DALTONS,French,"Rue Georges Tondeur, 60",7040.0,Quevy-Le-Grand (Mons),Hainaut,
 143,292,CARPE DIEM ASBL,French,Rue du Plateau 11,5100.0,Jambes,Namur,
 144,293,LES 3 SAPINS,French,Rue François Onckelet 10,7070.0,Mignault,Hainaut,Belgium
 145,294,LA SAPINIERE DE QUAREGNON,French,Rue De Pâturages 48,7390.0,Quaregnon,Hainaut,Belgium
 146,296,KANO JC TOURNAI,French,Rue de la Royère 80,7730.0,NECHIN,Hainaut,
-147,297,FOYER DU CALYDON,French,,,Liège,Liège,
+147,297,FOYER DU CALYDON,French,,,,Liège,
 148,298,CERCLE ADAPTE ANDENNAIS,French,Rue de Velaine 162,5300.0,Andenne,Namur,
 149,299,A.C.I.S. SOLEIL LEVANT,French,"Rue de Lodelinsart, 97",6061.0,Montignies - sur - Samble,Hainaut,Belgique
 150,300,LE CHAF ASBL,French,Rue Jules Maltaux 62,6240.0,FARCIENNES,Hainaut,BELGIQUE
 151,302,LE GRIMOIRE,French,Rue du Couvent 50,6890.0,TRANSINNE,Luxembourg,BELGIQUE
 152,303,LES 3 FÉES,French,"Rue de la Sauveniere,100",4900.0,SPA,Liège,BELGIQUE
 153,304,LES DRAGONS,French,Rue Bonaert 29,7011.0,GHLIN,Hainaut,BELGIQUE
-154,306,MAISON DES PILIFS,French,"Place Peeter Benoît, 3",1120.0,BRUXELLES,Brussel/Bruxelles,
-155,307,JOSO ASBL,French,Avenue du Pesage 12,1050.0,IXELLES,Brussel/Bruxelles,
+154,306,MAISON DES PILIFS,French,"Place Peeter Benoît, 3",1120.0,BRUXELLES,Bruxelles,
+155,307,JOSO ASBL,French,Avenue du Pesage 12,1050.0,IXELLES,Bruxelles,
 156,308,LA CARAVELLE,French,Rue du Canal 17,7640.0,Peronnes - Lez - Antoing,Hainaut,Belgique
 157,309,LA RENAISSANCE,French,Avenue Maistriau 52,7000.0,Mons,Hainaut,Belgique
 158,310,VISÉ - CENTRE DE CERFONTAINE,French,Rue Du Long Fossé 166A,4684.0,HACCOURT,Liège,
-159,311,CHEVAL ET FORET,French,Rue du Rouge-Cloître 5,1160.0,Auderghem,Brussel/Bruxelles,Belgique
+159,311,CHEVAL ET FORET,French,Rue du Rouge-Cloître 5,1160.0,Auderghem,Bruxelles,Belgique
 160,312,FAGN' HANDISPORTS ASBL,French,Winamplanche 6,4900.0,Spa,Liège,Belgique
 161,314,LIFE BADMINTON LE ROEULX,French,Manoir Saint Jean,7070.0,Le Roeulx,Hainaut,
-162,315,ECOLE NOS PILIFS,French,Avenue des Pagodes 212,1020.0,Laeken,Brussel/Bruxelles,Belgique
+162,315,ECOLE NOS PILIFS,French,Avenue des Pagodes 212,1020.0,Laeken,Bruxelles,Belgique
 163,316,LA CADOLE ASBL,French,Avenue de la Basilique 55,7603.0,Bonsecours,Hainaut,Belgique
 164,317,CTM - CAROLO TEAM MARCINELLE,French,Rue du Débarcadère 100,6001.0,Marcinelle,Hainaut,Belgique
 165,318,L'ECHALIER,French,Rue de L'Institut 40,4632.0,Cerexhe - Heuseux,Liège,Belgique
@@ -168,17 +168,17 @@ club_key,group_number,club_name,primary_language,address,zipcode,city,province,c
 167,321,ACBBH,French,Quartier Des Bruyères 5,7321.0,Blaton,Hainaut,Belgique
 168,322,ACBB,French,Quartier des Bruyères 5,7321.0,Blaton,Hainaut,Belgium
 169,323,LA GARENNE,French,"Rue du Vert Velu, 67",7608.0,Wiers - Péruwelz,Hainaut,Belgium
-170,324,LES VELDEMANNEKES,French,Jules Bordetlaan 132A,1140.0,BRUSSEL,Brussel/Bruxelles,BELGIË
+170,324,LES VELDEMANNEKES,French,Jules Bordetlaan 132A,1140.0,BRUSSEL,Bruxelles,BELGIË
 171,325,ALL STARS,French,Rue Anntoine Gosselin 16,7973.0,Strambruges,Hainaut,Belgique
 172,326,LE PART'AGE,French,Rue du Saclet 2,7730.0,Estaimpuis,Hainaut,Belgique
 173,327,LE PAYS DE COCAGNE,French,Chaussée du Roeulx 63,7000.0,Mons,Hainaut,Belgique
 174,328,16 ÂMES,French,"Vieux Chemin De Lille, 36",7501.0,ORCQ,Hainaut,Belgique
-175,329,L'ACCUEIL MOSAN ASBL,French,Avenue de la Marlagne 205,5000.0,Namur,Namur,Belgium
+175,329,L'ACCUEIL MOSAN ASBL,French,Avenue de la Marlagne 205,5000.0,,Namur,Belgium
 176,330,LA BOULAIE,French,Rue Jéricho 10,6460.0,Chimay,Hainaut,Belgique
-177,331,SAPI BL'A,French,213 Avenue Alphonse Allard,1420.0,Braine L'Alleud,Babant Wallon,Belgique
-178,332,B.C. CLERFAYT,French,Rue de Clerfayt 104/C,,Hainaut,Wallonie,Belgique
+177,331,SAPI BL'A,French,213 Avenue Alphonse Allard,1420.0,Braine L'Alleud,Brabant Wallon,Belgique
+178,332,B.C. CLERFAYT,French,Rue de Clerfayt 104/C,,,Hainaut,Belgique
 179,333,EESSCF - LES PEUPLIERS,French,Rue Mionvaux 33,6900.0,Marloie,Luxembourg,Luxembourg
-180,334,LE NIDVELLES° (LE COLOMBIER 2),French,Allée de la Cense du Colombier 2,1400.0,Nivelles,Brabant-Wallon,Belgium
+180,334,LE NIDVELLES° (LE COLOMBIER 2),French,Allée de la Cense du Colombier 2,1400.0,Nivelles,Brabant Wallon,Belgium
 181,335,ASCENSION ERQUELINNES,French,13 rue de Bougnies,6560.0,Erquelinnes,Hainaut,Belgium
 182,336,LONCIN AU PETIT BONHEUR,French,Rue de Jemeppe 224,4431.0,LONCIN,Liège,Belgium
 183,338,C GO GYM,French,Rue du Bornoville 49,7700.0,Mouscron,Hainaut,Belgique
@@ -215,7 +215,7 @@ club_key,group_number,club_name,primary_language,address,zipcode,city,province,c
 214,507,DRAPI,Dutch,Spoorweglaan 19,9840.0,DE PINTE,Oost-Vlaanderen,BELGIË
 215,508,SPORTCLUB DRUIVENSTREEK,Dutch,Deromstraat 45,3080.0,Duisburg,Vlaams Brabant,BELGIË
 216,509,FRISA,Dutch,Lostraat 175,1760.0,ROOSDAAL,Vlaams Brabant,BELGIË
-217,510,JC KUMIUCHI BERLARE,Dutch,Dorp 37b,9290.0,Berlare,Oost Vlaanderen,BELGIE
+217,510,JC KUMIUCHI BERLARE,Dutch,Dorp 37b,9290.0,Berlare,Oost-Vlaanderen,BELGIE
 218,511,TER MUIDEN VZW,Dutch,Meulestraat 6,8730.0,Oedelem,West-Vlaanderen,Belgie
 219,512,HET GIELSBOS,Dutch,Vosselaarseweg 1,2275.0,GIERLE,Antwerpen,BELGIË
 220,513,RECREAS DAMESVOETBALCLUB,Dutch,Hoge Kouter 11,8560.0,Gullegem,West-Vlaanderen,BELGIË
@@ -275,7 +275,7 @@ club_key,group_number,club_name,primary_language,address,zipcode,city,province,c
 274,578,G-VOETBAL EENDRACHT MECHELEN AAN DE MAAS,Dutch,Beekstraat 8,3630.0,MAASMECHELEN,Limburg,
 275,579,SMASH BC,Dutch,Halstraat 142 / 2,3550.0,HEUSDEN-ZOLDER,Limburg,
 276,581,ZGEEL,Dutch,Weverstraat 4,2430.0,Eindhout Laakdal,Antwerpen,BELGIË
-277,582,LOOISE A.V.,Dutch,Eindhoutseweg 25,2440.0,GEEL,ANTWERPEN,BELGIË
+277,582,LOOISE A.V.,Dutch,Eindhoutseweg 25,2440.0,GEEL,Antwerpen,BELGIË
 278,583,G-SPORT PAJOTTENLAND,Dutch,Bosstraat 4,1755.0,GOOIK,Vlaams Brabant,BELGIE
 279,584,BUSO 'T VURSTJEN,Dutch,Vurstjen 27,9940.0,EVERGEM,Oost-Vlaanderen,
 280,585,DUIN EN POLDER,Dutch,G.B. Jacquesstraat 78,8600.0,DIKSMUIDE,West-Vlaanderen,BELGIË
@@ -299,12 +299,12 @@ club_key,group_number,club_name,primary_language,address,zipcode,city,province,c
 298,609,WIT HUIS,Dutch,Rijselstraat 13,8210.0,LOPPEM,West-Vlaanderen,BELGIË
 299,610,DE MOLENKREKELS,Dutch,Krekelstraat 17,9160.0,LOKEREN,Oost-Vlaanderen,BELGIË
 300,611,BLIJDORP DENDERMONDE,Dutch,Baleunisstraat 70-72,9200.0,DENDERMONDE,Oost-Vlaanderen,BELGIË
-301,614,NIDO,Dutch,Verdunstraat 521/b,1130.0,HAREN,BRUSSEL,
+301,614,NIDO,Dutch,Verdunstraat 521/b,1130.0,HAREN,Bruxelles,
 302,615,BUSO DE DAGERAAD KORTESSEM VV,Dutch,Tapstraat 12,3720.0,KORTESSEM,Limburg,BELGIË
 303,616,SINT FERDINAND,Dutch,Sint Ferdinandstraat 1,3560.0,LUMMEN,Limburg,BELGIË
 304,617,MEKANDERS,Dutch,Steenweg op Oosthoven 25,2300.0,Turnhout,Antwerpen,BELGIË
 305,618,ROZEMARIJN,Dutch,Wageman 5,3140.0,KEERBERGEN,Vlaams Brabant,BELGIË
-306,621,BBC LIONS NIJLEN,Dutch,Italiëlei 171 / 4A,2060.0,Antwerpen,Antwerpen,Belgium
+306,621,BBC LIONS NIJLEN,Dutch,Italiëlei 171 / 4A,2060.0,,Antwerpen,Belgium
 307,622,HUMIVAL,Dutch,Nijverheidsstraat 9,9950.0,WAARSCHOOT,Oost-Vlaanderen,BELGIË
 308,624,INOA CAMPUS HANDZAME,Dutch,De zilten 52,8800.0,Roeselare,West-Vlaanderen,BELGIË
 309,625,DE BRON,Dutch,Lesseliersdreef 3,9120.0,BEVEREN,Oost-Vlaanderen,BELGIË
@@ -331,7 +331,7 @@ club_key,group_number,club_name,primary_language,address,zipcode,city,province,c
 330,658,DAIS VZW,Dutch,Kamstraat 22,1750.0,Lennik,Vlaams Brabant,BELGIË
 331,659,LEVEDALE,Dutch,De Biest 10,1861.0,WOLVERTEM,Vlaams Brabant,BELGIË
 332,660,DE STEIGER,Dutch,Riddermoerstraat 30,2880.0,BORNEM,Antwerpen,BELGIË
-333,661,ROBA,Dutch,Nobelstraat 144 A,3128.0,Baal,Vlaams-Brabant,Belgie
+333,661,ROBA,Dutch,Nobelstraat 144 A,3128.0,Baal,Vlaams Brabant,Belgie
 334,663,STB GYMNASTICS BERCHEM,Dutch,Karel Coggestraat 25,2600.0,Berchem,Antwerpen,Belgie
 335,664,TANDEM SPORT,Dutch,Onze Lieve Vrouwstraat 18,3590.0,DIEPENBEEK,Limburg,BELGIË
 336,665,TAFELTENNISCLUB ZELE VZW,Dutch,Guido Gezellestraat 23,9240.0,ZELE,Oost-Vlaanderen,
@@ -368,14 +368,14 @@ club_key,group_number,club_name,primary_language,address,zipcode,city,province,c
 367,713,JC-GRUITRODE,Dutch,Kerkplein 1,3670.0,Meeuwen-Gruitrode,Limburg,
 368,714,UNIFIED SAILING BELGIUM VZW,Dutch,Mussenhoevelaan 58,2530.0,Boechout,Antwerpen,
 369,715,SOMIVAL VZW,Dutch,Olmstraat 85,8790.0,WAREGEM,West-Vlaanderen,WAREGEM
-370,716,BBC GEMBO,Dutch,Lange Beeldekensstraat 102,2060.0,Antwerpen,Antwerpen,
+370,716,BBC GEMBO,Dutch,Lange Beeldekensstraat 102,2060.0,,Antwerpen,
 371,718,VZW TENNISCLUB LUMMEN,Dutch,Sportweg 10,3560.0,Lummen,Limburg,
 372,719,DE NISSE,Dutch,Gentsesteenweg 66,8500.0,Kortrijk,West-Vlaanderen,
 373,720,KONINKLIJKE LEBBEEKSE ATLETIEKCLUB,Dutch,Heizijdestraat 29,9280.0,Lebbeke,Oost-Vlaanderen,Belgium
 374,721,SPORTCLUB HUIS IN DE STAD VZW,Dutch,Hamelendreef 60,3300.0,Tienen,Vlaams Brabant,Belgium
 375,722,'T HAVERENHOF VZW,Dutch,Haverenblok 99,1980.0,Eppegem,Vlaams Brabant,
 376,723,KORTRIJK SPURS VZW,Dutch,Meiweg 63,8550.0,ZWEVEGEM,West-Vlaanderen,
-377,724,SPINSHUTTLE,Dutch,Sportpark Brasel,2480.0,Dessel,ANTWERPEN,
+377,724,SPINSHUTTLE,Dutch,Sportpark Brasel,2480.0,Dessel,Antwerpen,
 378,725,OSTEND TENNIS CLUB,Dutch,Koninginnelaan 83,8400.0,Oostende,West-Vlaanderen,
 379,727,AC DEINZE,Dutch,Gentstraat 68 /B15,9800.0,Deinze,Oost-Vlaanderen,
 380,729,2GETHER ON WHEELS,Dutch,Van De Wiellei 136,2930.0,Brasschaat,Antwerpen,België
@@ -403,12 +403,12 @@ club_key,group_number,club_name,primary_language,address,zipcode,city,province,c
 402,754,NO LIMIT VZW,Dutch,Moerelei 123,2610.0,Wilrijk,Antwerpen,Belgie
 403,755,WAVERSE BADMINTONCLUB,Dutch,Eikenboslaan 3 bus 101,2500.0,Koningshooikt,Antwerpen,België
 404,756,DE BOOMHUT,Dutch,Kerkstraat 40,2850.0,Boom,Antwerpen,Belgie
-405,757,ANTWERP CYCLING TEAM KONTICH,Dutch,KONINGIN ASTRIDLAAN 78,2550.0,KONTICH,ANTWERPEN,BELGIE
+405,757,ANTWERP CYCLING TEAM KONTICH,Dutch,KONINGIN ASTRIDLAAN 78,2550.0,KONTICH,Antwerpen,BELGIE
 406,758,K.W.T.P.C.,Dutch,Tennislaan 16,3600.0,Genk,Limburg,Belgie
 407,759,K SCHELLE SPORT,Dutch,Kapelstraat 140,2627.0,Schelle,Antwerpen,Belgie
 408,760,BRAXGATA,Dutch,Grote Steenweg 616,2600.0,Berchem,Antwerpen,Belgie
-409,761,ROYAL VICTORY HOCKEY CLUB,Dutch,Koniging Elisabethlei 8,2018.0,Antwerpen,Antwerpen,Belgie
-410,762,HORSE FUN VERBRANDE BRUG,Dutch,Grimbergsesteenweg 323,1980.0,Eppegem,Vlaams-Brabant,Belgie
+409,761,ROYAL VICTORY HOCKEY CLUB,Dutch,Koniging Elisabethlei 8,2018.0,,Antwerpen,Belgie
+410,762,HORSE FUN VERBRANDE BRUG,Dutch,Grimbergsesteenweg 323,1980.0,Eppegem,Vlaams Brabant,Belgie
 411,763,GEELSE KAJAKVAARDERS,Dutch,Kluterstraat 19,2440.0,GEEL,Antwerpen,Belgie
 412,764,KMTHC,Dutch,Zemstseweg 39,2800.0,Mechelen,Antwerpen,Belgie
 413,765,KHC DRAGONS vzw,Dutch,Sportendreef 1,2930.0,Brasschaat,Antwerpen,Belgie
@@ -421,17 +421,17 @@ club_key,group_number,club_name,primary_language,address,zipcode,city,province,c
 420,772,TURNKRING DEUGD EN MOED EKEREN,Dutch,Oorderseweg 83 bus 6,2180.0,Ekeren,Antwerpen,Belgie
 421,773,BOAS,Dutch,President Rooseveltplein 20,8500.0,Kortrijk,West-Vlaanderen,Belgie
 422,774,SwimAcad,Dutch,Gestichtstraat 18,9000.0,Gent,Oost-Vlaanderen,Belgie
-423,775,MANEGE DENNENHOF,Dutch,Dennendreef 64,9850.0,Landegem,Oost Vlaanderen,Belgie
+423,775,MANEGE DENNENHOF,Dutch,Dennendreef 64,9850.0,Landegem,Oost-Vlaanderen,Belgie
 424,776,K. SPORTING WIJCHMAAL,Dutch,Sportlaan 10,3990.0,Peer,,
 425,777,CITY PIRATES,Dutch,Speelpleinstraat 72,2170.0,Merksem,Antwerpen,
 426,778,BELOEGA FIT,Dutch,Schoolstraat 25,3020.0,Herent,Vlaams Brabant,Belgie
-427,779,Ruitersclub Domein Leiedal,Dutch,Kruiskouter 54,8501.0,Bissegem,West- Vlaanderen,Belgie
+427,779,Ruitersclub Domein Leiedal,Dutch,Kruiskouter 54,8501.0,Bissegem,West-Vlaanderen,Belgie
 428,780,BASKET DESSELGEM,Dutch,Reinareweg 9,8791.0,Waregem,West-Vlaanderen,Belgie
 429,781,ESSENSE TENNISCLUB INTER,Dutch,Lazaret 11,2910.0,Essen,Antwerpen,Belgie
 430,782,Sportgroep Vaste Vuist Lauwe,Dutch,Lauwbergstraat 99,8930.0,Lauwe,West-Vlaanderen,Belgie
 431,783,KIDS HASSELT,Dutch,Borggravevijversstraat 9,3500.0,Hasselt,Limburg,Belgie
 432,784,KONINKLIJKE HOCKEYCLUB BRUGGE,Dutch,K. Leopold III Laan 115a,8200.0,Brugge,West-Vlaanderen,Belgie
 433,785,G-VOETBAL KORTRIJK,Dutch,Beneluxepark 26,8500.0,KORTRIJK,West-Vlaanderen,Belgïe
-434,786,KHC SAINT-GEORGES,Dutch,Doorniksewijk 1,8500.0,KORTRIJK,Belgie,West-Vlaanderen
+434,786,KHC SAINT-GEORGES,Dutch,Doorniksewijk 1,8500.0,KORTRIJK,West-Vlaanderen,Belgie
 435,787,ATHLETES FOR HOPE,Dutch,Zavelbergen 12,29900.0,WUUSTWEZEL,Antwerpen,Belgïum
 436,788,HERK-SPORT,Dutch,Sint-Lambrechtsherkstraat 96,3500.0,Hasselt,Limburg,Belgie

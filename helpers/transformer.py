@@ -20,7 +20,34 @@ class DataTransformer:
 
         for col in text_columns:
             df[col] = df[col].fillna("").astype(str).str.strip() #remove spaces (if value is missing then first replace it with an empty string)
-            
+        
+        # fix province values
+        df["Province"] = df["Province"].replace({
+            "HAINAUT": "Hainaut",
+            "ANTWERPEN": "Antwerpen",
+            "Brussel/Bruxelles": "Bruxelles",
+            "BRUSSEL": "Bruxelles",
+            "Babant Wallon": "Brabant Wallon",
+            "Brabant-Wallon": "Brabant Wallon",
+            "Vlaams-Brabant": "Vlaams Brabant",
+            "Oost Vlaanderen": "Oost-Vlaanderen",
+            "West- Vlaanderen": "West-Vlaanderen"
+        })
+
+        # province is "Belgie" but country contains province
+        valid_provinces = [
+            "Hainaut", "Liège", "Namur", "Luxembourg", "Brabant Wallon",
+            "Antwerpen", "Limburg", "Oost-Vlaanderen", "West-Vlaanderen", "Vlaams Brabant"
+        ]
+
+        mask = (df["Province"] == "Belgie") & (df["Country"].isin(valid_provinces))
+
+        df.loc[mask, "Province"] = df.loc[mask, "Country"]
+        df.loc[mask, "Country"] = "Belgie"
+
+        # Wallonie fix
+        df.loc[df["Province"] == "Wallonie", "Province"] = df["City"]
+        df.loc[df["City"] == df["Province"], "City"] = ""
 
         #clean zipcode
         zipcode = df["Zipcode"]
