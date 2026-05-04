@@ -21,7 +21,7 @@ class DataTransformer:
         for col in text_columns:
             df[col] = df[col].fillna("").astype(str).str.strip() #remove spaces (if value is missing then first replace it with an empty string)
         
-        
+        df["City"] = df["City"].str.title()
 
         # fix province values
         df["Province"] = df["Province"].replace({
