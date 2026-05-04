@@ -21,6 +21,8 @@ class DataTransformer:
         for col in text_columns:
             df[col] = df[col].fillna("").astype(str).str.strip() #remove spaces (if value is missing then first replace it with an empty string)
         
+        
+
         # fix province values
         df["Province"] = df["Province"].replace({
             "HAINAUT": "Hainaut",
@@ -48,6 +50,23 @@ class DataTransformer:
         # Wallonie fix
         df.loc[df["Province"] == "Wallonie", "Province"] = df["City"]
         df.loc[df["City"] == df["Province"], "City"] = ""
+
+        # normalize country column to "Belgium"
+        df["Country"] = df["Country"].str.strip().str.lower()
+
+        df["Country"] = df["Country"].replace({
+            "belgique": "Belgium",
+            "belgië": "Belgium",
+            "belgie": "Belgium",
+            "belgium": "Belgium",
+            "belgïe": "Belgium",
+            "belgïum": "Belgium",
+            "belguim": "Belgium",
+            "": "Belgium"
+        })
+
+        # anything weird → also Belgium
+        df.loc[~df["Country"].isin(["Belgium"]), "Country"] = "Belgium"
 
         #clean zipcode
         zipcode = df["Zipcode"]
