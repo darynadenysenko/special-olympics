@@ -339,61 +339,59 @@ event_key,event_name,sport_key
 338,AG - Niveau C Cheval-D'Arçons / Paard met Bogen,5
 339,RG - Concours Complet/Volledige wedstrijd,18
 340,AG - Niveau C Barres Asymétriques / Brug met Ongelijke Leggers,5
-341,AG - Niveau B Barres Asymétriques / Brug met Ongelijke Leggers,5
-342,AG - Niveau B Complet / Volledig,5
-343,APA - 40m Sprint,11
-344,APA - Kogelstoten/Lancement de poids,11
-345,APA - Evenwicht/Equilibre,11
-346,APA - Basketbal(l),11
-347,KY 200 M Double Touring Kayak,22
-348,KY 200 M Pendulum Relay Kayak,22
-349,KY 200 M Single Professional Kayak,22
-350,KY 200 M Unified Double Touring Kayak,22
-351,KY 200 M Unified Double Professional Kayak,22
-352,KY 200 M Single Touring Kayak,22
-353,EQGA BER - Galop BER,10
-354,EQT BER - Trot/Draf BER,10
-355,AQ24 - 25 M Dos/Rugslag,23
-356,AQ15 - 50 M Brasse/Schoolslag,23
-357,AQ91 - 25 M Nage Libre/Vrije Slag,23
-358,AQ14 - 25 M Brasse/Schoolslag,23
-359,AQ92 - 50 M Nage Libre/Vrije Slag,23
-360,AQ25 - 50 M Dos/Rugslag,23
-361,AQ57 - 50 M Ventral/Borstligging,23
-362,AQ55 - 25 M Ventral/Borstligging,23
-363,AQ16 - 100 M Brasse/Schoolslag,23
-364,APA - Kogelstoten/Lancement du poids,11
-365,APA - Uithouding 6min /Endurance 6min,11
-366,APA - Unihockey,11
-367,APA - Medicinebalworp/Lancement médecine ball,11
-368,AQ56 - 25 M Dorsal/Rugligging,23
-369,AQ95 - 4X25 M Nage Libre/Vrije Slag,23
-370,AQ93 - 100 M Nage Libre/Vrije Slag,23
-371,AQ65 - 25 M Ventral Ass./Borstligging met Ass.,23
-372,AQ67 - 50 M Ventral Ass./Borstligging met Ass.,23
-373,AQ66 - 25 M Dorsal Ass./Rugligging met Ass.,23
-374,AQ76 - 25 M Dorsal Supp./Rugligging met Hulp,23
-375,AQ75 - 25 M Ventral Supp./Borstligging met Hulp,23
-376,AQ97 - 200 M Nage Libre/Vrije Slag,23
-377,AQ34 - 25 M Papillon/Vlinderslag,23
-378,AQ58 - 50 M Dorsal/Rugligging,23
-379,AQ68 - 50 M Dorsal Ass./Rugligging met Ass.,23
-380,AQ77 - 50 M Ventral Supp./Borstligging met Hulp,23
-381,SG -  Hexagonal Floorball,4
-382,SG -  Javelot,4
-383,SG - Runballs,4
-384,Evenwicht/ Equilibre APA - APA/AFA,11
-385,Hindernissenloop/Course d'obstacle  APA - APA/AFA,11
-386,Kegelvoetbal / Football de quilles APA - APA/AFA,11
-387,PA Sprong/Saut,11
-388,Petanque APA - APA/AFA,11
-389,Sprint APA - APA/AFA,11
-390,Unihockey APA - APA/AFA,11
-391,RG - Sol / Vloer,18
-392,AG - Niveau B Cheval-D'Arçons / Paard met Bogen,5
-393,RG - Niveau C Ballon / Bal,18
-394,RG - Niveau C Cerceau / Hoepel,18
-395,RG - Niveau C Corde / Touw,18
-396,BWW -  Bowling Avec rampe - chaise roulante/Met ramp - rolstoelbowling,14
-397,AG - Niveau B Barre Fixe / Rekstok,5
-398,AQ78 - 50 M Dorsal Supp./Rugligging met Hulp,23
+341,APA - 40m Sprint,11
+342,APA - Kogelstoten/Lancement de poids,11
+343,APA - Evenwicht/Equilibre,11
+344,APA - Basketbal(l),11
+345,KY 200 M Double Touring Kayak,22
+346,KY 200 M Pendulum Relay Kayak,22
+347,KY 200 M Single Professional Kayak,22
+348,KY 200 M Unified Double Touring Kayak,22
+349,KY 200 M Unified Double Professional Kayak,22
+350,KY 200 M Single Touring Kayak,22
+351,EQGA BER - Galop BER,10
+352,EQT BER - Trot/Draf BER,10
+353,AQ24 - 25 M Dos/Rugslag,23
+354,AQ15 - 50 M Brasse/Schoolslag,23
+355,AQ91 - 25 M Nage Libre/Vrije Slag,23
+356,AQ14 - 25 M Brasse/Schoolslag,23
+357,AQ92 - 50 M Nage Libre/Vrije Slag,23
+358,AQ25 - 50 M Dos/Rugslag,23
+359,AQ57 - 50 M Ventral/Borstligging,23
+360,AQ55 - 25 M Ventral/Borstligging,23
+361,AQ16 - 100 M Brasse/Schoolslag,23
+362,APA - Kogelstoten/Lancement du poids,11
+363,APA - Uithouding 6min /Endurance 6min,11
+364,APA - Unihockey,11
+365,APA - Medicinebalworp/Lancement médecine ball,11
+366,AQ56 - 25 M Dorsal/Rugligging,23
+367,AQ95 - 4X25 M Nage Libre/Vrije Slag,23
+368,AQ93 - 100 M Nage Libre/Vrije Slag,23
+369,AQ65 - 25 M Ventral Ass./Borstligging met Ass.,23
+370,AQ67 - 50 M Ventral Ass./Borstligging met Ass.,23
+371,AQ66 - 25 M Dorsal Ass./Rugligging met Ass.,23
+372,AQ76 - 25 M Dorsal Supp./Rugligging met Hulp,23
+373,AQ75 - 25 M Ventral Supp./Borstligging met Hulp,23
+374,AQ97 - 200 M Nage Libre/Vrije Slag,23
+375,AQ34 - 25 M Papillon/Vlinderslag,23
+376,AQ58 - 50 M Dorsal/Rugligging,23
+377,AQ68 - 50 M Dorsal Ass./Rugligging met Ass.,23
+378,AQ77 - 50 M Ventral Supp./Borstligging met Hulp,23
+379,SG -  Hexagonal Floorball,4
+380,SG -  Javelot,4
+381,SG - Runballs,4
+382,Evenwicht/ Equilibre APA - APA/AFA,11
+383,Hindernissenloop/Course d'obstacle  APA - APA/AFA,11
+384,Kegelvoetbal / Football de quilles APA - APA/AFA,11
+385,PA Sprong/Saut,11
+386,Petanque APA - APA/AFA,11
+387,Sprint APA - APA/AFA,11
+388,Unihockey APA - APA/AFA,11
+389,RG - Sol / Vloer,18
+390,AG - Niveau B Cheval-D'Arçons / Paard met Bogen,5
+391,RG - Niveau C Ballon / Bal,18
+392,RG - Niveau C Cerceau / Hoepel,18
+393,RG - Niveau C Corde / Touw,18
+394,BWW -  Bowling Avec rampe - chaise roulante/Met ramp - rolstoelbowling,14
+395,AG - Niveau B Barre Fixe / Rekstok,5
+396,AQ78 - 50 M Dorsal Supp./Rugligging met Hulp,23
