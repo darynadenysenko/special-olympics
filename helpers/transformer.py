@@ -102,6 +102,11 @@ class DataTransformer:
 
         for col in text_columns:
             df[col] = df[col].fillna("").astype(str).str.strip()
+        
+        
+        # remove records without a person code
+        df = df[df["Code"].notna()]
+        df = df[df["Code"].astype(str).str.strip() != ""]
 
 
         df["DOB"] = pd.to_datetime(df["DOB"], dayfirst=True, errors="coerce") #convert DOB to datetime
@@ -134,6 +139,10 @@ class DataTransformer:
 
         for col in text_columns:
             df[col] = df[col].fillna("").astype(str).str.strip()
+        
+        # remove records without a person code
+        df = df[df["Code"].notna()]
+        df = df[df["Code"].astype(str).str.strip() != ""]
 
         df["DOB"] = pd.to_datetime(df["DOB"], dayfirst=True)
 
