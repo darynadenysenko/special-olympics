@@ -132,4 +132,3 @@ fact_club_participation = transformer.build_fact_club_participation(
 # save to gold
 loader.save_csv(fact_club_participation, "data/gold/fact_club_participation.csv")
 
-

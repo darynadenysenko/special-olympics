@@ -165,9 +165,17 @@ class DataTransformer:
             "Code": "person_code"
         })
 
+        dim_person = dim_person.rename(columns={
+            "DOB": "dob"
+        })
+
+        dim_person = dim_person.rename(columns={
+            "Gender": "gender"
+        })
+
         # reorder columns
         dim_person = dim_person[
-            ["person_key", "person_code", "DOB", "Gender"]
+            ["person_key", "person_code", "dob", "gender"]
         ]
 
         return dim_person
