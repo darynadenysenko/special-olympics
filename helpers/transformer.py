@@ -103,7 +103,11 @@ class DataTransformer:
         for col in text_columns:
             df[col] = df[col].fillna("").astype(str).str.strip()
         
-        
+       
+
+        df = df[df["Code"].notna()]
+        df = df[df["Code"].astype(str).str.strip() != ""]
+
         # remove records without a person code
         df = df[df["Code"].notna()]
         df = df[df["Code"].astype(str).str.strip() != ""]
@@ -115,7 +119,7 @@ class DataTransformer:
         df["Age"] = df["Age"].replace(0, pd.NA)
 
         #remove duplicate rows 
-        df = df.drop_duplicates()
+        #df = df.drop_duplicates()
 
         #reset index after cleaning
         df = df.reset_index(drop=True)
@@ -162,9 +166,9 @@ class DataTransformer:
     def build_dim_person(self, df):
 
         df = df.copy()
-        dim_person = df[["Code", "Gender", "DOB"]]
+        dim_person = df[["Code", "Gender", "DOB"]].copy()
 
-        dim_person = dim_person.drop_duplicates()
+        dim_person = dim_person.drop_duplicates(subset=["Code"])
 
         dim_person = dim_person.reset_index(drop=True) #reset index after dropping duplicates
 
@@ -489,7 +493,7 @@ class DataTransformer:
         fact_person_certification["has_certificate"] = 1
 
         # remove duplicates
-        fact_person_certification = fact_person_certification.drop_duplicates()
+        #fact_person_certification = fact_person_certification.drop_duplicates()
 
         # reset index
         fact_person_certification = fact_person_certification.reset_index(drop=True)
@@ -565,9 +569,9 @@ class DataTransformer:
 
         # join with dim_event
         df = df.merge(
-            dim_event[["event_key", "event_name"]],
-            left_on="Event",
-            right_on="event_name",
+            dim_event[["event_key", "event_name", "sport_key"]],
+            left_on=["Event", "sport_key"],
+            right_on=["event_name", "sport_key"],
             how="left"
         )
 
@@ -620,7 +624,7 @@ class DataTransformer:
         })
 
         # remove duplicates
-        fact_results = fact_results.drop_duplicates()
+        #fact_results = fact_results.drop_duplicates()
 
         # reset index
         fact_results = fact_results.reset_index(drop=True)
@@ -725,7 +729,7 @@ class DataTransformer:
         ]]
 
         fact_club_participation["participated"] = 1
-        fact_club_participation = fact_club_participation.drop_duplicates()
+        #fact_club_participation = fact_club_participation.drop_duplicates()
         fact_club_participation = fact_club_participation.reset_index(drop=True)
 
         # surrogate key

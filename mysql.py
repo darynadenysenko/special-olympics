@@ -27,10 +27,13 @@ tables = [
     "fact_club_participation"
 ]
 
+
 # load each csv into MySQL
 for table_name in tables:
     file_path = f"data/gold/{table_name}.csv"
     df = pd.read_csv(file_path)
     df.to_sql(table_name, con=engine, if_exists="replace", index=False)
+
+
 
 print("All tables loaded into MySQL successfully!")

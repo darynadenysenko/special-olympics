@@ -15,12 +15,13 @@ results = extractor.load_all_results("data/bronze")
 #combine all results into one dataframe
 all_results = pd.concat(results.values(), ignore_index=True)
 
+
 #clean datasets
 clubs_clean = transformer.clean_clubs(clubs)
 certifications_clean = transformer.clean_certifications(certifications)
 results_clean = transformer.clean_results(all_results)
 
- 
+
 #save cleaned datasets to silver layer
 loader.save_csv(clubs_clean, "data/silver/clubs_cleaned.csv")
 loader.save_csv(certifications_clean, "data/silver/certifications_cleaned.csv")
@@ -31,10 +32,17 @@ loader.save_csv(results_clean, "data/silver/results_cleaned.csv")
 # ------dim_person------
 
 # build 
-dim_person = transformer.build_dim_person(certifications_clean)
+#dim_person = transformer.build_dim_person(certifications_clean)
 # save to gold layer
-loader.save_csv(dim_person, "data/gold/dim_person.csv")
+#loader.save_csv(dim_person, "data/gold/dim_person.csv")
 
+all_persons = pd.concat([
+    certifications_clean[["Code", "Gender", "DOB"]],
+    results_clean[["Code", "Gender", "DOB"]]
+], ignore_index=True)
+
+dim_person = transformer.build_dim_person(all_persons)
+loader.save_csv(dim_person, "data/gold/dim_person.csv")
 
 # ------dim_club------
 
@@ -116,6 +124,7 @@ fact_results = transformer.build_fact_results(
     dim_role,
     dim_year
 )
+
 
 # save to gold layer
 loader.save_csv(fact_results, "data/gold/fact_results.csv")
